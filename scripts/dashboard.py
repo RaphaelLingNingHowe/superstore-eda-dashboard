@@ -19,7 +19,7 @@ st.caption("資料來源：Sample Superstore | 技術：Python · SQL · Plotly 
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("../data/superstore.csv", encoding="latin1")
+    df = pd.read_csv("data/superstore.csv", encoding="latin1")
     df["Order Date"] = pd.to_datetime(df["Order Date"])
     df["Ship Date"] = pd.to_datetime(df["Ship Date"])
     df["Year"] = df["Order Date"].dt.year
