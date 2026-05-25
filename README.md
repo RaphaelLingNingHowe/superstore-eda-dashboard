@@ -1,50 +1,38 @@
-# 🛒 Superstore 電商營運分析 Dashboard
+# Superstore 電商營運分析
 
-> 電商營運分析 Dashboard | Python · SQL · Plotly · Streamlit · Power BI
+電商銷售資料的探索性分析專案，使用 Python 與 Power BI 分別實作互動式 Dashboard，並部署至雲端。
 
-## 🔗 Live Demo
-👉 [點此查看 Streamlit Dashboard](https://superstore-eda-dashboard-5zahahqvkuzw7nhcs72tqo.streamlit.app/)
+## Live Demo
+[Streamlit Dashboard](https://superstore-eda-dashboard-5zahahqvkuzw7nhcs72tqo.streamlit.app/)
 
-## 專案簡介
-透過 Sample Superstore 資料集進行完整的電商營運 EDA 分析，
-分別用 **Python + Streamlit** 和 **Power BI** 建立互動式 Dashboard，
-找出銷售與利潤的關鍵驅動因子。
+## 使用技術
 
-## 📊 Power BI Dashboard
-![Power BI Dashboard](screenshots/dashboard_overview.png)
+| 工具 | 用途 |
+|------|------|
+| Python / pandas | 資料清理與前處理 |
+| SQL (SQLite) | 資料聚合查詢 |
+| Plotly / Streamlit | 互動式視覺化與雲端部署 |
+| Power BI | 商業報表與 DAX 量值 |
 
-**功能：**
-- KPI 卡片：總銷售額、總利潤、利潤率、訂單數
-- 月度銷售趨勢折線圖
-- 品類銷售長條圖
-- Region 互動篩選器（點選即時更新所有圖表）
+## 分析內容
 
-## 🐍 Python + Streamlit Dashboard
-👉 [Live Demo](https://superstore-eda-dashboard-5zahahqvkuzw7nhcs72tqo.streamlit.app/)
+- 月度銷售與利潤趨勢
+- 品類與子品類利潤率比較
+- 折扣率對利潤的影響分析
+- 地區銷售表現
 
-**功能：**
-- 側邊欄多維度篩選（年份、品類、地區）
-- 月度銷售 & 利潤趨勢
-- 折扣率 vs 利潤率散佈圖
-- 品類利潤率分析
-- 動態商業洞察
+## Power BI Dashboard
+
+![Dashboard](screenshots/dashboard_overview.png)
 
 ## 主要發現
-- 📌 **折扣陷阱**：折扣超過 40% 的訂單平均利潤率為負
-- 📌 **品類差異**：Technology 銷售額最高，但部分子品類持續虧損
-- 📌 **季節性**：Q4（11-12月）銷售明顯拉升，建議提前布局庫存
 
-## 技能展示
-| 技能 | 應用 |
-|------|------|
-| Python / pandas | 資料清理、前處理、衍生欄位計算 |
-| SQL (SQLite) | 聚合查詢、GROUP BY、CASE WHEN |
-| Plotly | 互動式圖表（趨勢、散佈、長條）|
-| Streamlit | Dashboard 建構與雲端部署 |
-| Power BI | KPI 卡片、互動篩選、DAX 量值 |
-| 商業分析 | 折扣策略、利潤率分析、地區表現 |
+- 折扣超過 40% 的訂單平均利潤率為負，高折扣策略侵蝕獲利
+- Technology 品類銷售額最高，但 Tables 子品類長期虧損
+- Q4 銷售額較其他季度高出約 30%，季節性明顯
 
 ## 專案結構
+
 ```
 superstore-eda-dashboard/
 ├── data/
@@ -60,4 +48,5 @@ superstore-eda-dashboard/
 ```
 
 ## 資料來源
+
 [Kaggle - Superstore Dataset](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final)
